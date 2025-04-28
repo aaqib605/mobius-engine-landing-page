@@ -107,7 +107,10 @@ const Header: React.FC = () => {
           </ul>
 
           <div className="hidden [@media(min-width:920px)]:block">
-            <Button href="/get-started" className="w-[180px]">
+            <Button
+              href="/get-started"
+              className="w-[180px] bg-white text-[#022183]"
+            >
               Get Started
             </Button>
           </div>

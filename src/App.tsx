@@ -3,7 +3,8 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import HowWeWork from "./components/HowWeWork";
 import TestimonialsSection from "./components/TestimonialsSection";
-import BenifitsSection from "./components/WhyChooseUsSection";
+import BenifitsSection from "./components/BenifitsSection";
+import ApplicationPlansSection from "./components/ApplicationPlansSection";
 
 function App() {
   return (
@@ -33,6 +34,10 @@ function App() {
 
       <section>
         <BenifitsSection />
+      </section>
+
+      <section>
+        <ApplicationPlansSection />
       </section>
     </main>
   );
