@@ -93,7 +93,7 @@ export default function ApplicationPlansSection() {
           className="flex flex-col p-9 max-[375px]:px-3 gap-6 rounded-4xl shadow-md border-2 bg-[#0649E7] mx-auto text-white max-[980px]:max-w-[400px]"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
           viewport={{ once: true }}
         >
           <div className="flex items-center justify-between max-[980px]:flex-col max-[980px]:items-start gap-10">

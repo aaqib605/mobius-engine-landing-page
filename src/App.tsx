@@ -5,6 +5,7 @@ import HowWeWork from "./components/HowWeWork";
 import TestimonialsSection from "./components/TestimonialsSection";
 import BenifitsSection from "./components/BenifitsSection";
 import ApplicationPlansSection from "./components/ApplicationPlansSection";
+import ResumeBuildingAndCoachingSection from "./components/ResumeBuildingAndCoachingSection";
 
 function App() {
   return (
@@ -38,6 +39,10 @@ function App() {
 
       <section>
         <ApplicationPlansSection />
+      </section>
+
+      <section>
+        <ResumeBuildingAndCoachingSection />
       </section>
     </main>
   );
