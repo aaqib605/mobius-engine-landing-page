@@ -2,6 +2,7 @@ import AboutSection from "./components/About";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import HowWeWork from "./components/HowWeWork";
+import TestimonialsSection from "./components/TestimonialsSection";
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
         style={{ backgroundImage: "url('/src/assets/about-gradient.png')" }}
       >
         <AboutSection />
+      </section>
+
+      <section>
+        <TestimonialsSection />
       </section>
     </main>
   );

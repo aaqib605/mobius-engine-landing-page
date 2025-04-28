@@ -37,7 +37,7 @@ const cta = [
 export default function AboutSection() {
   return (
     <motion.section
-      className="max-w-[1080px] mx-auto w-full bg-cover bg-center py-12 md:py-26 px-16 max-md:px-3 min-h-screen"
+      className="max-w-[1080px] mx-auto w-full bg-cover bg-center py-12 md:py-26 px-16 max-md:px-6 min-h-screen"
       initial={{ opacity: 0, y: 150 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -67,7 +67,7 @@ export default function AboutSection() {
             href={item.href}
             className="text-white block hover:underline"
           >
-            {item.text} ➚
+            {item.text} ↗︎
           </a>
         ))}
       </motion.div>
