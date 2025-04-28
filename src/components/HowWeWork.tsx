@@ -17,7 +17,7 @@ const WorkStep = ({
   <motion.div
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5, delay: number * 0.1 }}
+    transition={{ duration: 0.5, delay: number * 0.2 }}
     viewport={{ once: true }}
     className="flex flex-col justify-start space-y-4 max-lg:items-center"
   >

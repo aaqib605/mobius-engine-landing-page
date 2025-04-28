@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import TestimonialCard from "./TestimonialCard";
 import Button from "./ui/Button";
 
@@ -24,7 +26,13 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-16 min-[900px]:py-24 px-16 max-md:px-6">
+    <motion.section
+      className="py-16 min-[900px]:py-24 px-16 max-md:px-6"
+      initial={{ opacity: 0, y: 150 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
       <div className="max-w-[1080px] mx-auto">
         <h2 className="text-3xl font-medium text-[#0649E7] mb-16 min-[900px]:mb-24 max-[900px]:text-center">
           What our clients have to say
@@ -34,6 +42,7 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial) => (
             <TestimonialCard
               key={testimonial.id}
+              id={testimonial.id}
               quote={testimonial.quote}
               link={testimonial.link}
             />
@@ -52,6 +61,6 @@ export default function TestimonialsSection() {
           </button>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import HowWeWork from "./components/HowWeWork";
 import TestimonialsSection from "./components/TestimonialsSection";
+import BenifitsSection from "./components/WhyChooseUsSection";
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
 
       <section>
         <TestimonialsSection />
+      </section>
+
+      <section>
+        <BenifitsSection />
       </section>
     </main>
   );

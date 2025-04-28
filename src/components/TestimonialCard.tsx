@@ -1,14 +1,26 @@
+import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import { BsPlayCircleFill } from "react-icons/bs";
 
 interface TestimonialCardProps {
+  id: number;
   quote: string;
   link: string;
 }
 
-export default function TestimonialCard({ quote, link }: TestimonialCardProps) {
+export default function TestimonialCard({
+  quote,
+  link,
+  id,
+}: TestimonialCardProps) {
   return (
-    <div className="rounded-4xl shadow-md overflow-hidden bg-[#0649E7] border-2 border-[#0649E7] max-w-[400px] mx-auto">
+    <motion.div
+      className="rounded-4xl shadow-md overflow-hidden bg-[#0649E7] border-2 border-[#0649E7] max-w-[400px] mx-auto"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: id * 0.2 }}
+      viewport={{ once: true }}
+    >
       <div className="h-64 bg-white flex items-center justify-center rounded-4xl overflow-hidden z-10">
         <BsPlayCircleFill className="text-4xl opacity-75" color="#0649E7" />
       </div>
@@ -22,6 +34,6 @@ export default function TestimonialCard({ quote, link }: TestimonialCardProps) {
           <FaArrowRight className="text-[#0649E7]" size="20" />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }
