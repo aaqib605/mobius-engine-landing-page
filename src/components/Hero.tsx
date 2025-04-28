@@ -4,8 +4,8 @@ import Button from "./ui/Button";
 
 const Hero: React.FC = () => {
   return (
-    <section className="flex-grow flex items-center justify-center  ">
-      <div className="max-w-[1080px] w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-3 lg:px-6">
+    <section className="flex-grow flex items-center justify-center px-16 max-md:px-3 max-lg:py-16">
+      <div className="max-w-[1080px] w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="text-center lg:text-left space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight text-white">
             Land job interviews <br />
