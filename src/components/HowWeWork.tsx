@@ -33,8 +33,14 @@ const WorkStep = ({
 
 export default function HowWeWork() {
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-[1080px] mx-auto px-6 flex flex-col max-lg:items-center">
+    <motion.section
+      className="py-24 bg-white"
+      initial={{ opacity: 0, y: 150 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
+      <div className="max-w-[1080px] mx-auto px-16 max-md:px-3 flex flex-col max-lg:items-center">
         <h2 className="text-2xl md:text-3xl font-semibold text-[#0649E7] mb-24">
           How we work?
         </h2>
@@ -48,6 +54,6 @@ export default function HowWeWork() {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

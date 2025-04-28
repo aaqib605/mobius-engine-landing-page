@@ -1,10 +1,18 @@
+import { motion } from "framer-motion";
+
 import React from "react";
 import HeroEbook from "../assets/hero-ebook.png";
 import Button from "./ui/Button";
 
 const Hero: React.FC = () => {
   return (
-    <section className="flex-grow flex items-center justify-center px-16 max-md:px-3 max-lg:py-16">
+    <motion.section
+      className="flex-grow flex items-center justify-center px-16 max-md:px-3 max-lg:py-16"
+      initial={{ opacity: 0, y: 150 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
       <div className="max-w-[1080px] w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="text-center lg:text-left space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight text-white">
@@ -32,7 +40,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
