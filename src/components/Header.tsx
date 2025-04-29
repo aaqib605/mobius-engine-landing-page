@@ -111,7 +111,7 @@ const Header: React.FC = () => {
           <div className="hidden [@media(min-width:920px)]:block">
             <Button
               href="/get-started"
-              className="w-[180px] bg-white text-[#022183]"
+              className="w-[180px] bg-white text-[#022183] hover:bg-[#022183] hover:text-white"
             >
               Get Started
             </Button>

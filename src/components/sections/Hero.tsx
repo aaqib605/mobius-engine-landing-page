@@ -26,7 +26,10 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="flex justify-center lg:justify-start">
-            <Button href="#" className="bg-white text-[#022183">
+            <Button
+              href="#"
+              className="bg-white text-[#022183] hover:bg-[#022183] hover:text-white transition-colors"
+            >
               Get Started →
             </Button>
           </div>

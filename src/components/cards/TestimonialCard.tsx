@@ -29,7 +29,7 @@ export default function TestimonialCard({
         <p className="text-lg">{quote}</p>
         <a
           href={link}
-          className="bg-white rounded-full p-2 shadow hover:bg-gray-100 transition-colors -rotate-45 inline-flex justify-center items-center h-12 w-12 self-end"
+          className="bg-white rounded-full p-2 shadow  transition-colors -rotate-45 inline-flex justify-center items-center h-12 w-12 self-end"
         >
           <FaArrowRight className="text-[#0649E7]" size="20" />
         </a>

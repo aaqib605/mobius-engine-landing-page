@@ -50,7 +50,10 @@ export default function ResumeBuildingAndCoachingCard({
       </ul>
 
       <div className="flex justify-center lg:justify-start mt-auto">
-        <Button href="#" className="bg-[#0649E7] text-white">
+        <Button
+          href="#"
+          className="bg-[#0649E7] text-white border-2 hover:border-[#0649E7] hover:bg-transparent hover:text-[#0649E7] transition-colors"
+        >
           Get Started →
         </Button>
       </div>

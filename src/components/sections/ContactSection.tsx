@@ -10,7 +10,7 @@ export default function ContactSection() {
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
-      <span className="font-medium text-4xl uppercase max-w-[200px] max-[980px]:text-3xl max-[450px]:text-2xl max-[980px]:max-w-full">
+      <span className="font-medium text-4xl uppercase max-w-[250px] max-[980px]:text-3xl max-[450px]:text-2xl max-[980px]:max-w-full">
         Still have doubts?
       </span>
       <span className="font-semibold text-6xl max-[980px]:text-4xl max-[450px]:text-2xl text-center">
