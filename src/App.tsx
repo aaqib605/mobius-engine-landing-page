@@ -1,13 +1,13 @@
-import AboutSection from "./components/About";
+import AboutSection from "./components/sections/About";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import HowWeWork from "./components/HowWeWork";
-import TestimonialsSection from "./components/TestimonialsSection";
-import BenifitsSection from "./components/BenifitsSection";
-import ApplicationPlansSection from "./components/ApplicationPlansSection";
-import ResumeBuildingAndCoachingSection from "./components/ResumeBuildingAndCoachingSection";
-import ContactSection from "./components/ContactSection";
-import Footer from "./components/Footer";
+import Hero from "./components/sections/Hero";
+import HowWeWork from "./components/sections/HowWeWork";
+import TestimonialsSection from "./components/sections/TestimonialsSection";
+import BenifitsSection from "./components/sections/BenifitsSection";
+import ApplicationPlansSection from "./components/sections/ApplicationPlansSection";
+import ResumeBuildingAndCoachingSection from "./components/sections/ResumeBuildingAndCoachingSection";
+import ContactSection from "./components/sections/ContactSection";
+import Footer from "./components/sections/Footer";
 import Copyright from "./components/Copyright";
 
 function App() {

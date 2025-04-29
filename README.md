@@ -1,54 +1,60 @@
-# React + TypeScript + Vite
+# Mobius Engine Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for the Mobius Engine landing page, built using React, TypeScript, and Vite. The landing page is designed to showcase the services and features of Mobius Engine, providing a modern and responsive user experience.
 
-Currently, two official plugins are available:
+<div className="video-container">
+  <video
+    className="w-full h-auto mb-8"
+    controls 
+  >
+    <source src="./src/assets/demo-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Responsive Design**: Fully responsive layout optimized for various screen sizes.
+- **Reusable Components**: Modular and reusable React components for scalability.
+- **Animations**: Smooth animations using Framer Motion.
+- **Tailwind CSS**: Styled with Tailwind CSS for rapid development.
+- **Modern Tooling**: Built with Vite for fast development and optimized builds.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Prerequisites
+
+- Node.js (>= 16.x)
+- npm (>= 7.x)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/aaqib605/mobius-engine-landing-page.git
+   cd mobius-engine-landing-page
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+
+Start the development server:
+
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The application will be available at `http://localhost:5173`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Technologies Used
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: Typed superset of JavaScript.
+- **Vite**: Next-generation frontend tooling.
+- **Tailwind CSS**: Utility-first CSS framework.
+- **Framer Motion**: Library for animations.
