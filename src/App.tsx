@@ -6,6 +6,7 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import BenifitsSection from "./components/BenifitsSection";
 import ApplicationPlansSection from "./components/ApplicationPlansSection";
 import ResumeBuildingAndCoachingSection from "./components/ResumeBuildingAndCoachingSection";
+import ContactSection from "./components/ContactSection";
 
 function App() {
   return (
@@ -18,9 +19,7 @@ function App() {
         <Hero />
       </section>
 
-      <section>
-        <HowWeWork />
-      </section>
+      <HowWeWork />
 
       <section
         className="min-h-screen flex flex-col bg-cover bg-center"
@@ -29,20 +28,16 @@ function App() {
         <AboutSection />
       </section>
 
-      <section>
-        <TestimonialsSection />
-      </section>
+      <TestimonialsSection />
 
-      <section>
-        <BenifitsSection />
-      </section>
+      <BenifitsSection />
 
-      <section>
-        <ApplicationPlansSection />
-      </section>
+      <ApplicationPlansSection />
 
-      <section>
-        <ResumeBuildingAndCoachingSection />
+      <ResumeBuildingAndCoachingSection />
+
+      <section className="h-[354px] max-[980px]:h-[250px] max-w-[1080px] mx-auto mb-25 px-15 max-md:px-3">
+        <ContactSection />
       </section>
     </main>
   );
