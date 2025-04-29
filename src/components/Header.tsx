@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
+
 import Logo from "./Logo";
 import Button from "./ui/Button";
+import logo from "../assets/logo.png";
 
 interface NavItem {
   name: string;
@@ -45,7 +47,7 @@ const Header: React.FC = () => {
           aria-label="Main navigation"
         >
           <div className="flex-shrink-0">
-            <Logo />
+            <Logo logo={logo} />
           </div>
 
           <ul className="hidden [@media(min-width:920px)]:flex  space-x-8">

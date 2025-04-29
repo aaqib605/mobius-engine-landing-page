@@ -7,6 +7,8 @@ import BenifitsSection from "./components/BenifitsSection";
 import ApplicationPlansSection from "./components/ApplicationPlansSection";
 import ResumeBuildingAndCoachingSection from "./components/ResumeBuildingAndCoachingSection";
 import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
+import Copyright from "./components/Copyright";
 
 function App() {
   return (
@@ -38,6 +40,12 @@ function App() {
 
       <section className="h-[354px] max-[980px]:h-[250px] max-w-[1080px] mx-auto mb-25 px-15 max-md:px-3">
         <ContactSection />
+      </section>
+
+      <Footer />
+
+      <section className="bg-[#0649E7]">
+        <Copyright />
       </section>
     </main>
   );
