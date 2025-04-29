@@ -13,20 +13,14 @@ import Copyright from "./components/Copyright";
 function App() {
   return (
     <main className="max-w-[1500px] mx-auto">
-      <section
-        className="min-h-screen flex flex-col bg-cover bg-center"
-        style={{ backgroundImage: "url('/src/assets/hero-gradient.png')" }}
-      >
+      <section className="min-h-screen flex flex-col bg-cover bg-center bg-[url(/src/assets/hero-gradient.png)]">
         <Header />
         <Hero />
       </section>
 
       <HowWeWork />
 
-      <section
-        className="min-h-screen flex flex-col bg-cover bg-center"
-        style={{ backgroundImage: "url('/src/assets/about-gradient.png')" }}
-      >
+      <section className="min-h-screen flex flex-col bg-cover bg-center bg-[url('/src/assets/about-gradient.png')]">
         <AboutSection />
       </section>
 

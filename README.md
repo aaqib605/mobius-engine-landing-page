@@ -2,15 +2,7 @@
 
 This repository contains the source code for the Mobius Engine landing page, built using React, TypeScript, and Vite. The landing page is designed to showcase the services and features of Mobius Engine, providing a modern and responsive user experience.
 
-<div className="video-container">
-  <video
-    className="w-full h-auto mb-8"
-    controls 
-  >
-    <source src="./src/assets/demo-video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-</div>
+https://github.com/user-attachments/assets/8e2eaaed-dc7e-4922-9563-18ed8cc83e09
 
 ## Features
 
